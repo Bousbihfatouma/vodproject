@@ -22,14 +22,14 @@ class ContactCrudController extends AbstractCrudController
     public function configureCrud(Crud $crud): Crud
     {
         return $crud
-            ->setEntityLabelInSingular('Demande de contact')
-            ->setEntityLabelInPlural('Demandes de contact')
+            ->setEntityLabelInSingular('Contact')
+            ->setEntityLabelInPlural('Contacts')
 
-            ->setPageTitle("index", "SymRecipe - Administration des demandes de contact")
+            ->setPageTitle("index", "Techassistant - Administration des demandes de contact")
 
             ->setPaginatorPageSize(20)
 
-            ->addFormTheme('@FOSCKEditor/Entity/ckeditor_widget.html.twig');
+            ->addFormTheme('@FOSCKEditor/Form/ckeditor_widget.html.twig');
     }
 
 

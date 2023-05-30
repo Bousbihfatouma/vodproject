@@ -33,7 +33,8 @@ class User
     #[ORM\Column(length: 255)]
     private ?string $roles = null;
 
-    public function getId(): ?int
+
+    public function getId(): ?Int
     {
         return $this->id;
     }
@@ -109,4 +110,5 @@ class User
 
         return $this;
     }
+
 }
